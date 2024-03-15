@@ -1,11 +1,13 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
-import "package:weather_project/pages/weather_app.dart";
+import 'package:weather_project/pages/weather_page.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
-// we always make our app to be a stateless widget
+// we always make our app to be a stateless wudget
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -17,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark(
         useMaterial3: true,
       ),
-      home: const WeatherApp(),
+      home: const WeatherPage(),
     );
   }
 }
